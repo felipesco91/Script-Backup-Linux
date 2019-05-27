@@ -32,12 +32,13 @@ Na documentação criar instruções sobre como agendar a execução do script u
 	O agendamento do Crontab sera realizado mediante interação do usuario especificando horario, data, quantidade de vezes durante a semana e quantos dias do mes sera realizado o backup. Para agendamento, o crontab funciona da seguinte forma abaixo:
 Exemplo: 0  4  *  *  *  who
 
-*Campo	Função
-*1o.	Minuto
-*2o.	Hora
-*3o.	Dia do mês
-*4o.	Mês
-*5o.	Dia da semana
-*6o.	Programa para execução
+| Campo	|    Função            |
+|-------|----------------------|
+|  1o.	|Minuto                |
+|  2o.	|Hora                  |
+|  3o.	|Dia do mês            |
+|  4o.	|Mês                   |
+|  5o.	|Dia da semana         |
+|  6o.	|Programa para execução|
 
 E para realizar essa função, foi criado um outro script para ser indicado no lugar do Case-Backup-NAC. O script se chama Backup-Automatico-Linux, ele sera o responsavel por realizar a atividade e gerar um log dentro da pasta backup com o usuario que o realizou, data do backup e se houve falha e sucesso.
